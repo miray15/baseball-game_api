@@ -5,7 +5,7 @@ class FoodsController < ApplicationController
   end
 
   def create
-    @food = food.create(
+    @food = Food.create(
       name: params[:name],
       quantity: params[:quantity],
       price: params[:price],
