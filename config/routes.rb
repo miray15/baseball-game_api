@@ -18,6 +18,6 @@ patch "/foods/:id" => "foods#update"
 
 # destroy 
 
-
+delete "/foods/:id" => "foods#destroy"
 
 end
