@@ -2,7 +2,7 @@ Rails.application.routes.draw do
  
 # show 
 
-
+get "/foods/:id" => "foods#show"
 
 # index
 

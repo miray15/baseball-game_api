@@ -13,4 +13,9 @@ class FoodsController < ApplicationController
     render :show
   end
 
+
+  def show
+    @food = Food.find_by(id: params[:id])
+    render :show
+  end
 end
