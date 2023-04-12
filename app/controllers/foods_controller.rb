@@ -18,4 +18,15 @@ class FoodsController < ApplicationController
     @food = Food.find_by(id: params[:id])
     render :show
   end
+
+  def update
+    @food = Food.find_by(id: params[:id])
+    @food.update(
+      name: params[:name] || @food.name,
+      quantity: params[:quantity] || @food.quantity,
+      price: params[:price] || @food.price,
+    )
+    render :show
+  end
+
 end

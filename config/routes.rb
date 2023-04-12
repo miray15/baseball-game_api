@@ -14,6 +14,8 @@ post "/foods" => "foods#create"
 
 # update
 
+patch "/foods/:id" => "foods#update"
+
 # destroy 
 
 
